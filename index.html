@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Demons Cave | Immersive Gourmet Darkness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1337",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0a0506",
+                        "charcoal": "#181112",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes flicker {
+            0%, 100% { opacity: 1; text-shadow: 0 0 10px #ec1337; }
+            50% { opacity: 0.8; text-shadow: 0 0 20px #ff4d00; }
+            80% { opacity: 0.9; }
+        }
+        .flicker-text {
+            animation: flicker 3s infinite;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #181112;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ec1337;
+        }
+        .glow-border:hover {
+            box-shadow: 0 0 15px rgba(236, 19, 55, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-white custom-scrollbar">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-white/10 bg-background-dark/80 px-8 py-4 backdrop-blur-md lg:px-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">skull</span>
+</div>
+<h2 class="text-xl font-black uppercase tracking-[0.2em] text-white lg:text-2xl">Demons Cave</h2>
+</div>
+<nav class="hidden flex-1 justify-center gap-12 lg:flex">
+<a class="text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary" href="#descent">The Descent</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary" href="#pit">The Pit</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary" href="#sacrifices">Sacrifices</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/70 transition-colors hover:text-primary" href="#lore">Lore</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="hidden items-center gap-2 text-white/50 hover:text-primary lg:flex">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+<button class="rounded bg-primary px-6 py-2 text-xs font-black uppercase tracking-widest text-white transition-all hover:bg-red-700 hover:shadow-[0_0_20px_rgba(236,19,55,0.5)]">
+                Secure a Spot
+            </button>
+</div>
+</header>
+<main>
+<!-- HeroSection with 3D Focus -->
+<section class="relative flex min-h-screen items-center justify-center overflow-hidden pt-20" id="descent">
+<!-- Background Image with "3D" Demon focus -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-background-dark"></div>
+<div class="h-full w-full bg-cover bg-center opacity-40 mix-blend-luminosity" data-alt="3D rendered demonic skull with glowing embers and smoke" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaoINVjwpMPZVyDtY3e0vcUuXDe5hG5VwOMWOJzLipALQZKaiA-XlwrMR9dP2qelUEzorj-anrf9FT6ul_ZQmJGP28iuy9ep30AjEG_RO_YTOTtOOpFEF_BTVRdGw9Jga1yFVaRXRQOES8RBGdfw4ZWzHdmq3f8dcFiEqexW51w1t7YdxTr5ycpFQEdkFDWelJetHbSTLqCJbK8fx8mjBQVAi7G2zq-nh13t6KyHPHu2jC87wyVm1kXyHsfECwgsAgJCMMATVahvzO");'>
+</div>
+<!-- Ember Overlay Effects -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#0a0506_80%)]"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-8 px-4 text-center">
+<div class="space-y-4">
+<span class="text-sm font-bold uppercase tracking-[0.5em] text-primary">Est. In The Depths</span>
+<h1 class="flicker-text text-6xl font-black uppercase leading-none tracking-tighter text-white md:text-8xl lg:text-[10rem]">
+                        Demons<br/><span class="text-primary">Cave</span>
+</h1>
+<p class="mx-auto max-w-xl text-base font-light leading-relaxed text-white/60 md:text-lg">
+                        A high-end, immersive descent into gourmet darkness. <br class="hidden md:block"/> Savor the fire of the underworld in our subterranean sanctuary.
+                    </p>
+</div>
+<div class="flex flex-col items-center gap-12">
+<button class="group flex items-center gap-4 rounded-full border border-primary/30 bg-primary/10 px-8 py-4 transition-all hover:bg-primary">
+<span class="text-sm font-black uppercase tracking-widest">Enter The Pit</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<div class="animate-bounce">
+<span class="material-symbols-outlined text-primary text-3xl">keyboard_double_arrow_down</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SectionHeader: The Pit -->
+<section class="mx-auto max-w-7xl px-4 py-20 lg:px-20" id="pit">
+<div class="mb-12 flex flex-col items-start gap-4">
+<div class="flex items-center gap-4">
+<div class="h-[2px] w-12 bg-primary"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">The Menu</span>
+</div>
+<h2 class="text-4xl font-black uppercase tracking-tight text-white md:text-5xl">The Pit</h2>
+<p class="max-w-md text-white/50">Curated by our masters of the flame, choose your sacrifice from the primal elements of the cave.</p>
+</div>
+<!-- ImageGrid / Menu Categories -->
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<!-- Flesh -->
+<div class="glow-border group relative aspect-[3/4] overflow-hidden rounded-lg bg-charcoal">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Gourmet prime cut steak on a dark platter" style='background-image: linear-gradient(to top, rgba(10, 5, 6, 0.9), transparent), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCw7KFfPznXaD7dUy2Zh1SFIh8Vv-xpzDe4hL4lxU4jxgiQM5u_MpKNSQO7bRG3M9zQr5rmI_zIgca4_dDdc0lrw8y_X_oIu98XEqp5NJqIpVErvdyVSrG9K0M2Zeq1za_NWIbyHnUFyUCR0RfaQ5K5eA6Atl7_DMBpWtHv5_INnrfZQLDbhl6FCc-Dq824pzIzL--nc98pzlBIXT2R-aSONU9CZ9HZsXymyDBTdJP9V2FJvmXfgHUGOaCihEuC3Y4JiJ2wykT_TqHb");'>
+</div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="mb-2 text-2xl font-black uppercase text-white">Flesh</h3>
+<p class="mb-4 text-xs font-bold uppercase tracking-widest text-primary">Signature Steaks</p>
+<p class="text-sm text-white/60 opacity-0 transition-opacity group-hover:opacity-100">Wagyu, Dry-aged cuts, and bone-in ribeyes scorched over obsidian coals.</p>
+</div>
+</div>
+<!-- Bone -->
+<div class="glow-border group relative aspect-[3/4] overflow-hidden rounded-lg bg-charcoal">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Artisanal side dishes with roasted marrow and herbs" style='background-image: linear-gradient(to top, rgba(10, 5, 6, 0.9), transparent), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwl3Qrzj-VvcZXLYZr-Xg2oeuLOBM6DRTL5x1Atu6AeqRY6xsnMb1-DDNm9hMbCObjJiC_nGITBlWho05QH6XVZCEAd3ETDYenMLKvyUzLRKwxAx5KRsHA5fNa-jTxnqcGO2uY6y5xTZHSsqPXlGgLyluKtEA15kF-vWctmlrp_RrAwHQdLVbreWbQgIanULhAmgCfi1mvMyfp0C7ljPugKfXO4e4TSFA1J7Oflz4E8E9azdj24g7Wp2rTMnWq2nYqP1gAyHInxUKg");'>
+</div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="mb-2 text-2xl font-black uppercase text-white">Bone</h3>
+<p class="mb-4 text-xs font-bold uppercase tracking-widest text-primary">Gourmet Sides</p>
+<p class="text-sm text-white/60 opacity-0 transition-opacity group-hover:opacity-100">Truffle marrow, charred roots, and ancient grains prepared in the pit.</p>
+</div>
+</div>
+<!-- Blood -->
+<div class="glow-border group relative aspect-[3/4] overflow-hidden rounded-lg bg-charcoal">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Deep red cocktail in a crystal glass with smoke" style='background-image: linear-gradient(to top, rgba(10, 5, 6, 0.9), transparent), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_gMSOjnygORNjn_S_ED8Cclma4y1yvlf4GMmZmLRdJy0-D_yuOm2UXyq5heqShWOTQF_1UoX0F4jNo5FjKh9yLJEKC-EJYEbK8t_Qba4a4Z_aBZPWjXZURf3Z2JRA2bXmXX32w3UfhaostCZQAuRfHagp6K14E-K6k0acYG7lfAoXJW6psMslXfO6ZgfLPeMCuAYXl_CIRPp33tKG2yK2p9mNUvrJP_nB2rZbRXtdpqohlguShf0ewadIJSrhBHosqgHMf5bSRsYt");'>
+</div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="mb-2 text-2xl font-black uppercase text-white">Blood</h3>
+<p class="mb-4 text-xs font-bold uppercase tracking-widest text-primary">Crafted Spirits</p>
+<p class="text-sm text-white/60 opacity-0 transition-opacity group-hover:opacity-100">Oak-aged elixirs, dark reds, and signature cocktails infused with smoke.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SectionHeader: Sacrifices (Reservations) -->
+<section class="bg-charcoal/50 py-24" id="sacrifices">
+<div class="mx-auto max-w-4xl px-4 text-center">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">calendar_month</span>
+<h2 class="mb-4 text-4xl font-black uppercase tracking-tight text-white md:text-5xl">Sacrifices</h2>
+<p class="mb-12 text-white/60">The depths are exclusive. Claim your territory before it's consumed.</p>
+<form class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col gap-2 text-left">
+<label class="text-[10px] font-bold uppercase tracking-widest text-primary/70">Number of Souls</label>
+<select class="rounded border border-white/10 bg-background-dark py-3 text-sm text-white focus:border-primary focus:ring-0">
+<option>2 Souls</option>
+<option>4 Souls</option>
+<option>6 Souls</option>
+<option>Inner Circle (8+)</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 text-left">
+<label class="text-[10px] font-bold uppercase tracking-widest text-primary/70">The Night</label>
+<input class="rounded border border-white/10 bg-background-dark py-3 text-sm text-white focus:border-primary focus:ring-0" type="date"/>
+</div>
+<div class="flex flex-col gap-2 text-left">
+<label class="text-[10px] font-bold uppercase tracking-widest text-primary/70">The Hour</label>
+<select class="rounded border border-white/10 bg-background-dark py-3 text-sm text-white focus:border-primary focus:ring-0">
+<option>19:00 - Twilight</option>
+<option>21:00 - Midnight Sun</option>
+<option>23:00 - The Abyss</option>
+</select>
+</div>
+<div class="flex flex-col justify-end">
+<button class="w-full rounded bg-primary py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all hover:bg-red-700" type="submit">
+                            Submit Sacrifice
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/5 bg-background-dark px-8 py-16 lg:px-20">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col items-center justify-between gap-12 md:flex-row">
+<div class="flex flex-col items-center gap-4 md:items-start">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary">skull</span>
+<h2 class="text-xl font-black uppercase tracking-widest text-white">Demons Cave</h2>
+</div>
+<p class="text-sm text-white/40">666 Abyss Way, Lower Manhattan, NY</p>
+</div>
+<div class="flex gap-8">
+<a class="text-white/40 transition-colors hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-white/40 transition-colors hover:text-primary" href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+<a class="text-white/40 transition-colors hover:text-primary" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+<div class="text-center md:text-right">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Opening Hours</p>
+<p class="text-sm text-white/40">Daily: Sunset till Dawn</p>
+</div>
+</div>
+<div class="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 md:flex-row">
+<p class="text-[10px] font-medium uppercase tracking-widest text-white/20">© 2024 Demons Cave Restaurant Group. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[10px] font-medium uppercase tracking-widest text-white/20 hover:text-primary" href="#">Privacy</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-white/20 hover:text-primary" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
