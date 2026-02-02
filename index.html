@@ -310,11 +310,8 @@
     </footer>
 
     <script>
-        window.addEventListener("scroll", () => {
-            const audio = document.getElementById("bgAudio");
-            audio.muted = false;
-            audio.play();
-        }, { once: true });
+        const audio = new Audio('audio.mp3');
+		audio.play();
     </script>
 </body>
 
