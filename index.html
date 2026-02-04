@@ -311,7 +311,16 @@
 
     <script>
         const audio = new Audio('https://ahmed-online007.github.io/Demons-Cave/audio.mp3');
-		audio.play();
+		audio.loop = true;
+
+		function playMusic() {
+    		audio.play().catch(err => {
+      		console.log("Autoplay blocked:", err);
+			});
+  		}
+
+  // Play on first click anywhere
+  		document.addEventListener("click", playMusic, { once: true });
     </script>
 </body>
 
